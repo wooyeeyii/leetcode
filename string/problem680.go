@@ -25,7 +25,7 @@ s consists of lowercase English letters.
 
 func validPalindrome(s string) bool {
 	l, r := 0, len(s)-1
-	for ; l <= r; {
+	for l <= r {
 		if s[l] != s[r] {
 			return isPalindrome(s[l+1:r+1]) || isPalindrome(s[l:r])
 		}
@@ -37,7 +37,7 @@ func validPalindrome(s string) bool {
 
 func isPalindrome(s string) bool {
 	l, r := 0, len(s)-1
-	for ; l < r; {
+	for l < r {
 		if s[l] != s[r] {
 			return false
 		}

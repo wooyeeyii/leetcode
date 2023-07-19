@@ -42,7 +42,7 @@ func rotateTooLarge(nums []int, k int) {
 	}
 }
 
-//  O(1) extra space
+// O(1) extra space
 func rotate(nums []int, k int) {
 	l := len(nums)
 	k = k % l
